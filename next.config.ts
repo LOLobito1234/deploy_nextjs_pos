@@ -1,4 +1,3 @@
-// next.config.js
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
@@ -6,11 +5,15 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: "deploy-pos-nestjs-x6dn.onrender.com",
+        hostname: 'deploy-pos-nestjs-x6dn.onrender.com'
       },
       {
         protocol: 'https',
-        hostname: 'res.cloudinary.com',
+        hostname: 'res.cloudinary.com'
+      },
+      {
+        protocol: 'http',
+        hostname: 'localhost'
       }
     ]
   }
